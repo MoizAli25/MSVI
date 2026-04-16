@@ -1,5 +1,5 @@
 {
-  "rewrites":  [
-    {"source": "/(.*)", "destination": "/index.html"}
+  "rewrites": [
+    { "source": "/", "destination": "/dib_pakistan_marketing.html" }
   ]
 }
