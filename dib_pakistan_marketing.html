@@ -262,6 +262,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--off-white);color:var(--in
     <svg class="nav-icon" viewBox="0 0 16 16" fill="currentColor"><path d="M1 2.5A1.5 1.5 0 012.5 1h3A1.5 1.5 0 017 2.5v3A1.5 1.5 0 015.5 7h-3A1.5 1.5 0 011 5.5v-3zm8 0A1.5 1.5 0 0110.5 1h3A1.5 1.5 0 0115 2.5v3A1.5 1.5 0 0113.5 7h-3A1.5 1.5 0 019 5.5v-3zm-8 8A1.5 1.5 0 012.5 9h3A1.5 1.5 0 017 10.5v3A1.5 1.5 0 015.5 15h-3A1.5 1.5 0 011 13.5v-3zm8 0A1.5 1.5 0 0110.5 9h3a1.5 1.5 0 011.5 1.5v3a1.5 1.5 0 01-1.5 1.5h-3A1.5 1.5 0 019 13.5v-3z"/></svg>
     As-Is Strategy Canvas
   </div>
+  <!-- <div class="nav-item" onclick="showSection('tobe',this)">
+    <svg class="nav-icon" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1a7 7 0 100 14A7 7 0 008 1zM0 8a8 8 0 1116 0A8 8 0 010 8zm11.5-1.5a.5.5 0 010 1H6.707l1.647 1.646a.5.5 0 01-.708.708l-2.5-2.5a.5.5 0 010-.708l2.5-2.5a.5.5 0 11.708.708L6.707 6.5H11.5z"/></svg>
+    To-Be Strategy Canvas
+  </div> -->
   <div class="nav-item" onclick="showSection('buyer',this)">
     <svg class="nav-icon" viewBox="0 0 16 16" fill="currentColor"><path d="M0 1.5A.5.5 0 01.5 1H2a.5.5 0 01.485.379L2.89 3H14.5a.5.5 0 01.491.592l-1.5 8A.5.5 0 0113 12H4a.5.5 0 01-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 01-.5-.5zM4.441 11L5.75 4h6.5l1.31 7H4.44z"/></svg>
     Buyer Utility Map
@@ -538,8 +542,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--off-white);color:var(--in
     <div class="grid-2">
       <div class="card card-accent">
         <h3>DIBPL's Strongest Factors</h3>
-        <p><strong style="color:var(--dib-green)">Sharia Compliance (5/5)</strong> and <strong style="color:var(--dib-green)">UAE/GCC Connectivity (5/5)</strong> are DIBPL's unique differentiators. No Pakistani competitor can match its direct operational link to the world's first Islamic bank. Asset quality is outstanding — NPF ratio of only 2.4% vs. 6.1% for the overall banking industry (SBP Dec 2025). Its corporate banking is well-diversified across manufacturing, energy, and agribusiness sectors.</p>
-        <span class="source-tag">Source: SBP IB Bulletin Dec 2025, Table 3 — Asset Quality Ratios</span>
+        <p><strong style="color:var(--dib-green)">Sharia Compliance (5/5)</strong> and <strong style="color:var(--dib-green)">UAE/GCC Connectivity (5/5)</strong> are DIBPL's unique differentiators. No Pakistani competitor can match its direct operational link to the world's first Islamic bank. Its product portfolio spans Corporate, Commercial, SME, and Consumer segments — offering trade finance, partnership-based structures (Musharaka, Diminishing Musharaka), and rental/Ijarah products across all client tiers.</p>
       </div>
       <div class="card" style="border-left:4px solid #D63B2F;">
         <h3 style="color:#D63B2F;">DIBPL's Weakest Factors</h3>
@@ -616,26 +619,75 @@ body{font-family:'DM Sans',sans-serif;background:var(--off-white);color:var(--in
         <tbody>
           <tr><td>Sharia Compliance</td><td>5 — UAE-backed Sharia board; world-class credentials</td><td>5 — Market benchmark</td><td>None</td><td class="st-good">✓ Strong</td></tr>
           <tr><td>UAE/GCC Connectivity</td><td>5 — Unique. Direct UAE parent, GCC investment corridor</td><td>2 — Locally focused</td><td>+3 Advantage</td><td class="st-good">✓ Leads</td></tr>
-          <tr><td>Asset Quality</td><td>4 — NPF ratio 2.4% (IBI avg, SBP Dec 2025); strong provisioning at 119.7%</td><td>4 — Strong</td><td>Parity</td><td class="st-good">✓ Strong</td></tr>
-          <tr><td>Corporate Banking</td><td>4 — Energy, textiles, agri financing via Musharaka, Istisna, Running Musharakah</td><td>4 — Equally strong</td><td>Parity</td><td class="st-warn">⚠ Watch</td></tr>
-          <tr><td>Product Range</td><td>4 — Corporate, SME, Consumer (Auto, Home, Personal, Cards, Fan/Solar Financing)</td><td>5 — Most extensive</td><td>-1 Gap</td><td class="st-warn">⚠ Watch</td></tr>
+          <tr><td>Product Range</td><td>4 — Trade finance, partnership (Musharaka/DM), rental (Ijarah) across Corporate, Commercial, SME & Consumer</td><td>5 — Most extensive</td><td>-1 Gap</td><td class="st-warn">⚠ Watch</td></tr>
           <tr><td>Branch Network</td><td>3 — 310 branches (SBP Dec 2025), urban-concentrated</td><td>5 — 1,105 branches nationwide</td><td>-2 Gap</td><td class="st-bad">✗ Weak</td></tr>
           <tr><td>ATM/ADC Network</td><td>3 — 229+ ATMs (limited vs peers)</td><td>5 — Extensive network</td><td>-2 Gap</td><td class="st-bad">✗ Weak</td></tr>
-          <tr><td>Digital App</td><td>2 — Functional but frequently complained about</td><td>4 — Strong digital stack</td><td>-2 Gap</td><td class="st-bad">✗ Weak</td></tr>
+          <tr><td>Digital App</td><td>2 — Currently on IFLEX; functional but frequently complained about; migration to TEMENOS needed</td><td>4 — Strong digital stack</td><td>-2 Gap</td><td class="st-bad">✗ Weak</td></tr>
           <tr><td>Customer Service</td><td>2 — Slow resolution; avg rating 2.0/5 in reviews</td><td>4 — Relatively strong</td><td>-2 Gap</td><td class="st-bad">✗ Weak</td></tr>
           <tr><td>Mass-Market Brand</td><td>3 — Known but not top-of-mind for retail</td><td>5 — Strongest Islamic brand</td><td>-2 Gap</td><td class="st-bad">✗ Weak</td></tr>
-          <tr><td>Diaspora Banking</td><td>4 — Roshan Digital + UAE direct link</td><td>3 — Standard offering</td><td>+1 Advantage</td><td class="st-good">✓ Strong</td></tr>
-          <tr><td>Profit Rates</td><td>3 — Average market rates</td><td>4 — Competitive rates</td><td>-1 Gap</td><td class="st-warn">⚠ Watch</td></tr>
         </tbody>
       </table>
-      <span class="source-tag" style="margin-top:12px;display:inline-block;">Branch data: SBP IB Bulletin Dec 2025, Annexure I · Asset quality: SBP Table 3</span>
-    </div>
-
-    <div class="card card-accent" style="margin-top:0;">
-      <h3>As-Is Insight</h3>
-      <p>DIBPL's current strategy is <strong style="color:var(--dib-green)">premium and GCC-anchored but narrow</strong>. It wins decisively in the corporate/international corridor and has outstanding asset quality (NPF 2.4% vs. 6.1% banking industry avg). But it is losing the mass-market battle on fundamentals: customer service, digital experience, and branch access — with only 310 branches vs. Meezan's 1,105 and Faysal's 900. The canvas exposes a bifurcated strategy — world-class above the line, below-par below it.</p>
+      <span class="source-tag" style="margin-top:12px;display:inline-block;">Branch data: SBP IB Bulletin Dec 2025, Annexure I</span>
     </div>
   </div>
+
+  <!-- ══════════════════════════════════ TO-BE CANVAS ══════════════════════════════════ -->
+  <!-- <div class="section" id="section-tobe">
+    <div class="page-header">
+      <h1>To-Be <em>Strategy Canvas</em></h1>
+      <div class="page-divider"></div>
+      <p class="page-sub">DIBPL's Aspirational Blue Ocean Profile — Where Should We Be?</p>
+    </div>
+
+    <div class="insight">
+      <p>The To-Be canvas visualises DIBPL's target value curve after implementing Blue Ocean initiatives. Inspired by the ERRC framework, DIBPL's new curve <strong>eliminates/reduces</strong> what the industry competes on but customers don't value, while <strong>raising/creating</strong> factors that unlock new demand — separating DIBPL decisively from Meezan's curve.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-bottom:20px;">
+      <div style="background:rgba(214,59,47,0.1);border:1.5px solid rgba(214,59,47,0.4);border-radius:10px;padding:12px 16px;text-align:center;">
+        <div style="font-size:18px;margin-bottom:4px;">✕</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-weight:700;color:#D63B2F;font-size:14px;letter-spacing:1px;">ELIMINATE</div>
+        <div style="font-size:11px;color:var(--muted);margin-top:4px;">Paper docs · Branch-only services</div>
+      </div>
+      <div style="background:rgba(230,126,34,0.08);border:1.5px solid rgba(230,126,34,0.4);border-radius:10px;padding:12px 16px;text-align:center;">
+        <div style="font-size:18px;margin-bottom:4px;">📉</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-weight:700;color:#B84A08;font-size:14px;letter-spacing:1px;">REDUCE</div>
+        <div style="font-size:11px;color:var(--muted);margin-top:4px;">Branch dependency · Wait times</div>
+      </div>
+      <div style="background:rgba(0,103,56,0.07);border:1.5px solid rgba(0,103,56,0.3);border-radius:10px;padding:12px 16px;text-align:center;">
+        <div style="font-size:18px;margin-bottom:4px;">📈</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-weight:700;color:var(--dib-green);font-size:14px;letter-spacing:1px;">RAISE</div>
+        <div style="font-size:11px;color:var(--muted);margin-top:4px;">Digital app · Customer service · SME</div>
+      </div>
+      <div style="background:rgba(0,102,178,0.07);border:1.5px solid rgba(0,102,178,0.3);border-radius:10px;padding:12px 16px;text-align:center;">
+        <div style="font-size:18px;margin-bottom:4px;">★</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-weight:700;color:#0066B2;font-size:14px;letter-spacing:1px;">CREATE</div>
+        <div style="font-size:11px;color:var(--muted);margin-top:4px;">Dual-Country Banking · Corp Credit Card</div>
+      </div>
+    </div>
+
+    <div class="canvas-wrap">
+      <h3>To-Be Strategy Canvas — DIB Pakistan</h3>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:8px;">Offering level (1–5) across competing factors. The <span style="color:#006738;font-weight:600;">green line</span> is DIBPL's To-Be target curve; the <span style="color:#C9A84C;font-weight:600;">gold line</span> is Meezan (market leader benchmark). New factors created by DIBPL are shown at the right — where Meezan scores near zero.</p>
+      <div class="canvas-legend">
+        <div class="legend-item"><div class="legend-dot" style="background:#006738;"></div>DIB Pakistan — As-Is (current)</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#00A862;border:2px dashed #006738;"></div>DIB Pakistan — To-Be (target)</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#C9A84C;"></div>Meezan Bank (market leader)</div>
+      </div>
+      <canvas id="tobeCanvas" height="400"></canvas>
+    </div>
+
+    <div class="grid-2">
+      <div class="card card-accent">
+        <h3>What Changes in the To-Be Curve</h3>
+        <p>DIBPL raises Digital Banking from 3→5, Customer Service from 2→4, and Profit Rates from 3→4 — closing critical gaps vs Meezan. Product Range rises to 5, reflecting the full trade, partnership, and rental portfolio. Two entirely new factors are created — <strong>Dual-Country Banking</strong> and <strong>SME Financing</strong> — where DIBPL scores 5 and Meezan scores low, creating uncontested territory.</p>
+      </div>
+      <div class="card" style="border-left:4px solid var(--dib-gold);">
+        <h3 style="color:var(--dib-green-dark);">Where DIBPL Diverges from Meezan</h3>
+        <p>Meezan's strength lies in Branch Network, ATM coverage, and mass-market brand. The To-Be DIBPL curve deliberately does <strong>not</strong> try to match Meezan on branches — instead it leapfrogs on digital experience, UAE connectivity, dual-country banking, and SME product innovation. This is the classic Blue Ocean divergence — a different shape, not a better copy.</p>
+      </div>
+    </div>
+  </div> -->
 
   <!-- ══════════════════════════════════ BUYER UTILITY ══════════════════════════════════ -->
   <div class="section" id="section-buyer">
@@ -677,8 +729,8 @@ body{font-family:'DM Sans',sans-serif;background:var(--off-white);color:var(--in
             <td class="cell-good">✓ Helpful staff</td>
             <td class="cell-bad">✗ Complex KYC</td>
             <td class="cell-warn">⚠ App not intuitive</td>
-            <td class="cell-bad">✗ No unified view</td>
-            <td class="cell-warn">⚠ Manual processes</td>
+            <td class="cell-na">—</td>
+            <td class="cell-na">—</td>
             <td class="cell-good">✓ Clear exit</td>
           </tr>
           <tr>
@@ -713,7 +765,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--off-white);color:var(--in
             <td class="cell-warn">⚠ Paper-based</td>
             <td class="cell-warn">⚠ Physical docs</td>
             <td class="cell-bad">✗ No paperless default</td>
-            <td class="cell-bad">✗ Limited e-statements</td>
+            <td class="cell-na">—</td>
             <td class="cell-bad">✗ Outdated core system</td>
             <td class="cell-na">—</td>
           </tr>
@@ -728,7 +780,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--off-white);color:var(--in
       </div>
       <div class="card" style="border-left:4px solid var(--dib-green);">
         <h3>🟢 Current Utility Strengths</h3>
-        <p>Risk reduction is DIBPL's standout strength — Sharia compliance, AA- rating, SBP regulation and a sector-leading NPF ratio (2.4% vs. 6.1% industry avg per SBP Dec 2025). Premium brand image and Priority Banking attract high-net-worth clients. WhatsApp Banking is a positive digital differentiator worth scaling.</p>
+        <p>Risk reduction is DIBPL's standout strength — Sharia compliance, AA- rating, and SBP regulation build deep customer trust. Premium brand image and Priority Banking attract high-net-worth clients. WhatsApp Banking is a positive digital differentiator worth scaling.</p>
       </div>
     </div>
   </div>
@@ -754,7 +806,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--off-white);color:var(--in
         <div class="errc-item"><span class="errc-icon">✕</span>Manual credit verification delaying home/auto finance approvals</div>
         <div class="errc-item"><span class="errc-icon">✕</span>Branch-only services that can be fully digitized</div>
         <div class="errc-item"><span class="errc-icon">✕</span>Complex Sharia product naming confusing mass-market customers</div>
-        <div class="errc-item"><span class="errc-icon">✕</span>Physical prize bond processing (legacy, low-value service)</div>
       </div>
       <div class="errc-box reduce">
         <div class="errc-title">📉 REDUCE</div>
@@ -762,7 +813,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--off-white);color:var(--in
         <div class="errc-item"><span class="errc-icon">↓</span>Physical branch dependency for routine daily transactions</div>
         <div class="errc-item"><span class="errc-icon">↓</span>Call center wait times → target under 2 minutes</div>
         <div class="errc-item"><span class="errc-icon">↓</span>Account opening time → from days to under 1 hour digitally</div>
-        <div class="errc-item"><span class="errc-icon">↓</span>Minimum balance requirements for savings accounts</div>
         <div class="errc-item"><span class="errc-icon">↓</span>Complexity of Sharia product explanations for retail customers</div>
       </div>
       <div class="errc-box raise">
@@ -779,20 +829,10 @@ body{font-family:'DM Sans',sans-serif;background:var(--off-white);color:var(--in
         <div class="errc-title">✨ CREATE</div>
         <p class="errc-sub">Never-before-offered factors to build from scratch</p>
         <div class="errc-item"><span class="errc-icon">★</span>UAE-Pakistan Dual Banking — one account, two countries seamlessly</div>
-        <div class="errc-item"><span class="errc-icon">★</span>Digital supply chain financing for SME &amp; corporate</div>
+        <div class="errc-item"><span class="errc-icon">★</span>Corporate Credit Card — Sharia-compliant, tailored for business clients</div>
         <div class="errc-item"><span class="errc-icon">★</span>Airtime/digital wallet transactions on personal finance app</div>
         <div class="errc-item"><span class="errc-icon">★</span>Gamified Islamic financial literacy platform for youth (median age: 22)</div>
-        <div class="errc-item"><span class="errc-icon">★</span>Seamless cross-border remittance solutions (UAE-Pakistan corridor)</div>
-        <div class="errc-item"><span class="errc-icon">★</span>Hybrid Sukuk — innovative blended Islamic capital market instruments</div>
-        <div class="errc-item"><span class="errc-icon">★</span>Green Sukuk for retail investors — sustainable Sharia bonds</div>
-        <div class="errc-item"><span class="errc-icon">★</span>Agriculture Micro-Murabaha — agri at 12.4% of IBI financing, DIBPL underrepresented</div>
       </div>
-    </div>
-
-    <div class="card card-accent">
-      <h3>Strategic Implication of the ERRC</h3>
-      <p>The ERRC analysis reveals DIBPL's Blue Ocean move: <strong style="color:var(--dib-green)">double down on the unique UAE-Pakistan corridor advantage</strong> while simultaneously fixing the retail experience gap. SME financing is critically underdeveloped industry-wide (only 2.2% of IBI portfolio per SBP Dec 2025) — a clear uncontested space. The "Create" quadrant shows territory no competitor currently occupies — a dual-country banking product, digital supply chain financing, hybrid Sukuk, and remittance solutions. Combined with eliminating legacy friction, DIBPL can reposition from "one of many Islamic banks" to <strong style="color:var(--dib-green)">"Pakistan's premier Islamic fintech for the Gulf corridor."</strong></p>
-      <span class="source-tag">Source: SBP IB Bulletin Dec 2025, Figure 7 — SME share = 2.2% of IBI client-wise financing</span>
     </div>
   </div>
 
@@ -812,18 +852,18 @@ body{font-family:'DM Sans',sans-serif;background:var(--off-white);color:var(--in
     <div class="nc-grid">
       <div class="nc-card">
         <span class="nc-tier-badge nc-tier-1">🔵 First Tier — "Soon-to-Be"</span>
-        <div class="nc-title">Reluctant Users On the Edge</div>
-        <p class="nc-desc">Current customers who use DIBPL minimally or are considering switching due to poor digital experience or slow service. They stay only because of Sharia credibility but are one bad experience away from leaving — especially as Raqami Islamic Digital Bank pilot operations have now launched (SBP Dec 2025).</p>
-        <div class="tags" style="margin-bottom:12px;"><span class="tag">DIB App Users</span><span class="tag">Urban Retail</span></div>
-        <div class="nc-strategy"><strong>Strategy:</strong> Fix the digital app immediately. Launch a 24-hour complaint resolution SLA. Offer loyalty rewards. Convert them into vocal advocates before digital-first Islamic banks steal them.</div>
+        <div class="nc-title">Customers on the Verge of Switching</div>
+        <p class="nc-desc">Soon-to-be non-customers are those who currently hold accounts or are taking financing from competitor Islamic banks — specifically <strong>Meezan Bank, Faysal Bank, Al Baraka,</strong> and <strong>BankIslami</strong>. They are aware of DIBPL but chose competitors due to wider branch access, better digital experience, or more competitive profit rates. A single superior proposition could win them over.</p>
+        <div class="tags" style="margin-bottom:12px;"><span class="tag">Meezan Customers</span><span class="tag">Faysal Bank Users</span><span class="tag">Al Baraka Clients</span><span class="tag">BankIslami Clients</span></div>
+        <div class="nc-strategy"><strong>Strategy:</strong> Target with UAE prestige + improved digital app + competitive profit rates. Showcase DIBPL's exclusive GCC corridor advantage that no domestic competitor can offer.</div>
       </div>
 
       <div class="nc-card">
         <span class="nc-tier-badge nc-tier-2">🟡 Second Tier — "Refusing"</span>
-        <div class="nc-title">People Who Chose Competitors</div>
-        <p class="nc-desc">Muslims who want Islamic banking but consciously chose Meezan (1,105 branches), HBL Islamic (608 branches), or UBL Ameen (752+ branches) over DIBPL due to better digital experience, wider network, or better savings profit rates. They know DIBPL but prefer others.</p>
-        <div class="tags" style="margin-bottom:12px;"><span class="tag">Meezan Customers</span><span class="tag">UBL Ameen Users</span><span class="tag">Young Professionals</span></div>
-        <div class="nc-strategy"><strong>Strategy:</strong> A superior digital-first Islamic account with better profit rates. UAE prestige + improved app can win this segment. Target fintech-savvy users aged 22–35 with a digital-only account.</div>
+        <div class="nc-title">Conventional Bankers & Mobile Wallet Users</div>
+        <p class="nc-desc">This tier consists of two distinct groups: <strong>(1) Customers who prefer conventional banking</strong> and actively refuse Islamic banking — they either don't understand it or distrust its Sharia compliance. <strong>(2) Customers who rely on JazzCash and Easypaisa</strong> as their primary wallet for deposits and money transfers, having never engaged with a formal bank at all.</p>
+        <div class="tags" style="margin-bottom:12px;"><span class="tag">Conventional Bank Customers</span><span class="tag">JazzCash Users</span><span class="tag">Easypaisa Users</span><span class="tag">Digital Wallet Holders</span></div>
+        <div class="nc-strategy"><strong>Strategy:</strong> Educate conventional customers on how Islamic banking products are functionally equivalent and ethically superior. For wallet users, offer a zero-friction Islamic mobile account that integrates with or transitions from JazzCash/Easypaisa habits.</div>
       </div>
 
       <div class="nc-card">
@@ -840,12 +880,6 @@ body{font-family:'DM Sans',sans-serif;background:var(--off-white);color:var(--in
         <div class="tags" style="margin-bottom:12px;"><span class="tag">Unbanked Population</span><span class="tag">Rural Traders</span><span class="tag">Women Entrepreneurs</span><span class="tag">UAE Workers</span></div>
         <div class="nc-strategy"><strong>Strategy:</strong> Agent banking + mobile wallet partnerships. Zero-balance Asaan Islamic Account. Micro-Murabaha for small traders. UAE remittance corridors for overseas workers.<br/><br/><strong>Women Inclusion:</strong> Introduce <strong>dedicated women's financing products</strong> and debit cards to unlock this underserved segment.</div>
       </div>
-    </div>
-
-    <div class="card card-green" style="margin-top:4px;">
-      <h3>🌟 The Biggest Blue Ocean: UAE Diaspora + Pakistani Expats</h3>
-      <p>1.6 million+ Pakistanis work in the UAE and need seamless banking between both countries. No bank currently offers a truly integrated UAE-Pakistan dual-market Islamic banking product. DIBPL's parentage gives it a natural right to own this segment — but it requires building a purpose-built cross-border product. The sector's Financing to Deposit Ratio of 51.2% (SBP Dec 2025) signals room to deploy capital into new segments. <strong>This is DIBPL's Blue Ocean — and no competitor can follow.</strong></p>
-      <p style="margin-top:8px;font-size:12px;opacity:.8;">Source: SBP IB Bulletin Dec 2025, Table 5 — Financing to Deposit Ratio (FDR) = 51.2%</p>
     </div>
 
     <div class="ref-box">
@@ -870,18 +904,28 @@ const FACTORS = [
   { name: "Branch Network",        dib: 2, meezan: 5, faysal: 5, bankislami: 3, albaraka: 2 },
   { name: "Product Range",         dib: 4, meezan: 5, faysal: 4, bankislami: 3, albaraka: 3 },
   { name: "Customer Service",      dib: 2, meezan: 4, faysal: 3, bankislami: 3, albaraka: 3 },
-  { name: "Auto/Home Finance",     dib: 4, meezan: 5, faysal: 4, bankislami: 3, albaraka: 3 },
-  { name: "Corporate Banking",     dib: 4, meezan: 4, faysal: 3, bankislami: 2, albaraka: 2 },
-  { name: "Asset Quality",         dib: 4, meezan: 4, faysal: 3, bankislami: 3, albaraka: 3 },
   { name: "ATM/ADC Network",       dib: 2, meezan: 5, faysal: 4, bankislami: 3, albaraka: 2 },
   { name: "Profit Rates",          dib: 3, meezan: 4, faysal: 3, bankislami: 3, albaraka: 3 },
   { name: "UAE/GCC Connectivity",  dib: 5, meezan: 2, faysal: 1, bankislami: 2, albaraka: 4 },
 ];
 
+// TO-BE factors — DIBPL's aspirational Blue Ocean profile vs Meezan
+const TOBE_FACTORS = [
+  { name: "Sharia Compliance",     dib: 5, tobe: 5, meezan: 5 },
+  { name: "Digital Banking",       dib: 3, tobe: 5, meezan: 4 },
+  { name: "Branch Network",        dib: 2, tobe: 3, meezan: 5 },
+  { name: "Product Range",         dib: 4, tobe: 5, meezan: 5 },
+  { name: "Customer Service",      dib: 2, tobe: 4, meezan: 4 },
+  { name: "ATM/ADC Network",       dib: 2, tobe: 3, meezan: 5 },
+  { name: "Profit Rates",          dib: 3, tobe: 4, meezan: 4 },
+  { name: "UAE/GCC Connectivity",  dib: 5, tobe: 5, meezan: 2 },
+  { name: "Dual-Country Banking",  dib: 1, tobe: 5, meezan: 1 },
+  { name: "SME Financing",         dib: 2, tobe: 5, meezan: 4 },
+];
+
 // Notes to show below factor scores
 const FACTOR_NOTES = {
   "Branch Network": "DIB:310 | Meezan:1,105 | Faysal:900 | BI:569 | AB:196 (SBP Dec 2025)",
-  "Asset Quality": "IBI sector NPF = 2.4% vs 6.1% overall (SBP Dec 2025)",
 };
 
 const RATINGS = [
@@ -889,8 +933,8 @@ const RATINGS = [
   { name: "Digital App & Online Banking",   score: 2.5, comment: "App crashes reported, balance not displaying, limited features vs Meezan and UBL. New Islamic digital banks entering market heighten urgency to improve." },
   { name: "Customer Service Quality",       score: 2.0, comment: "Multiple reviews cite 20–30 day waits, no callbacks, complaints unresolved for months. SLA enforcement absent." },
   { name: "Branch Availability",            score: 2.0, comment: "Only 310 branches (SBP Dec 2025) vs Meezan's 1,105 and Faysal's 900; concentrated in urban Punjab and Sindh." },
-  { name: "Product Variety",                score: 3.5, comment: "Good range of home/auto finance, savings, Takaful, solar/fan financing; Priority Banking appreciated by HNW clients." },
-  { name: "Transaction Speed",              score: 3.0, comment: "In-branch experience mixed; inter-bank transfers reported as slow. Core system needs modernization." },
+  { name: "Product Variety",                score: 3.5, comment: "DIBPL offers a comprehensive product portfolio spanning Corporate (trade finance, working capital), Commercial, SME, and Consumer segments. Products range across partnership structures (Musharaka, Diminishing Musharaka), rental/Ijarah, Murabaha trade finance, and consumer products including auto, home, personal finance, credit cards, fan and solar financing." },
+  { name: "Transaction Speed",              score: 3.0, comment: "In-branch experience mixed; inter-bank transfers reported as slow. Core banking system (currently IFLEX) needs to be shifted to TEMENOS — a modern, scalable platform that would significantly improve transaction processing speed and digital capabilities." },
   { name: "Account Opening Process",        score: 3.0, comment: "Physical branch process appreciated; digital onboarding lags significantly behind competitors and new digital-only banks." },
   { name: "Overall Customer Satisfaction",  score: 2.8, comment: "Negative reviews outweigh positive; systemic service quality issues contrast with strong financial metrics (ROE 45.3%, AA- rating)." },
 ];
@@ -902,6 +946,7 @@ const titles = {
   factors: "Competing Factors",
   ratings: "Customer Ratings",
   asis: "As-Is Strategy Canvas",
+  tobe: "To-Be Strategy Canvas",
   buyer: "Buyer Utility Map",
   errc: "ERRC Grid",
   noncustomers: "Non-Customers",
@@ -914,6 +959,7 @@ function showSection(id, el) {
   el.classList.add('active');
   document.getElementById('topbarTitle').textContent = titles[id];
   if (id === 'asis') setTimeout(drawCanvas, 80);
+  if (id === 'tobe') setTimeout(drawTobeCanvas, 80);
   if (window.innerWidth < 800) document.getElementById('sidebar').classList.remove('open');
   window.scrollTo(0, 0);
 }
@@ -1073,8 +1119,156 @@ function drawCanvas() {
   });
 }
 
+function drawTobeCanvas() {
+  const canvas = document.getElementById('tobeCanvas');
+  if (!canvas) return;
+  const dpr = window.devicePixelRatio || 1;
+  const W = canvas.parentElement.clientWidth - 56;
+  const H = 400;
+  canvas.width = W * dpr;
+  canvas.height = H * dpr;
+  canvas.style.width = W + 'px';
+  canvas.style.height = H + 'px';
+  const ctx = canvas.getContext('2d');
+  ctx.scale(dpr, dpr);
+
+  const PAD_L = 46, PAD_R = 20, PAD_T = 28, PAD_B = 90;
+  const plotW = W - PAD_L - PAD_R;
+  const plotH = H - PAD_T - PAD_B;
+  const n = TOBE_FACTORS.length;
+  const step = plotW / (n - 1);
+
+  // Shaded ERRC regions
+  const regionColors = [
+    'rgba(214,59,47,0.04)',   // eliminate zone (first 0 factors — visual only)
+    'rgba(0,103,56,0.03)',    // raise zone
+    'rgba(0,102,178,0.05)',   // create zone (last 2 new factors)
+  ];
+  // Mark the last 2 factors as "create" zone
+  const createStart = PAD_L + (n - 2) * step - step * 0.5;
+  ctx.fillStyle = 'rgba(0,102,178,0.05)';
+  ctx.fillRect(createStart, PAD_T, PAD_L + plotW - createStart, plotH);
+  // Dashed divider line
+  ctx.save();
+  ctx.setLineDash([4, 4]);
+  ctx.strokeStyle = 'rgba(0,102,178,0.25)';
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.moveTo(createStart, PAD_T);
+  ctx.lineTo(createStart, PAD_T + plotH);
+  ctx.stroke();
+  ctx.restore();
+  // "New Factors" label
+  ctx.fillStyle = '#0066B2';
+  ctx.font = `bold 10px 'DM Sans', sans-serif`;
+  ctx.textAlign = 'center';
+  ctx.fillText('✨ NEW FACTORS', createStart + (PAD_L + plotW - createStart) / 2, PAD_T + 14);
+
+  // Grid lines
+  ctx.strokeStyle = 'rgba(0,103,56,0.1)';
+  ctx.lineWidth = 1;
+  for (let i = 1; i <= 5; i++) {
+    const y = PAD_T + plotH - (i / 5) * plotH;
+    ctx.beginPath();
+    ctx.moveTo(PAD_L, y);
+    ctx.lineTo(PAD_L + plotW, y);
+    ctx.stroke();
+    ctx.fillStyle = 'rgba(0,103,56,0.45)';
+    ctx.font = `10px 'DM Sans', sans-serif`;
+    ctx.textAlign = 'right';
+    ctx.fillText(i, PAD_L - 8, y + 4);
+  }
+
+  // hi / lo labels
+  ctx.fillStyle = 'rgba(0,103,56,0.4)';
+  ctx.font = `10px 'DM Sans', sans-serif`;
+  ctx.textAlign = 'right';
+  ctx.fillText('hi', PAD_L - 8, PAD_T + 6);
+  ctx.fillText('lo', PAD_L - 8, PAD_T + plotH + 4);
+
+  // "Offering level" Y axis label
+  ctx.save();
+  ctx.translate(14, PAD_T + plotH / 2);
+  ctx.rotate(-Math.PI / 2);
+  ctx.fillStyle = 'rgba(0,103,56,0.5)';
+  ctx.font = `10px 'DM Sans', sans-serif`;
+  ctx.textAlign = 'center';
+  ctx.fillText('Offering level', 0, 0);
+  ctx.restore();
+
+  // X labels
+  ctx.fillStyle = '#2A3D30';
+  ctx.font = `10px 'DM Sans', sans-serif`;
+  ctx.textAlign = 'center';
+  TOBE_FACTORS.forEach((f, i) => {
+    const x = PAD_L + i * step;
+    const y = PAD_T + plotH + 16;
+    const words = f.name.split(' ');
+    words.forEach((w, wi) => {
+      ctx.fillText(w, x, y + wi * 13);
+    });
+    ctx.strokeStyle = 'rgba(0,103,56,0.2)';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(x, PAD_T + plotH);
+    ctx.lineTo(x, PAD_T + plotH + 5);
+    ctx.stroke();
+  });
+
+  // Datasets: as-is DIB (dashed), to-be DIB (solid bold green), Meezan (gold)
+  const datasets = [
+    { key: 'meezan', color: '#C9A84C', dash: [], width: 2.5, dotR: 4, label: 'Meezan Bank', fill: 'rgba(201,168,76,0.06)' },
+    { key: 'dib',    color: '#006738', dash: [6,4], width: 2, dotR: 3.5, label: 'DIB As-Is', fill: null },
+    { key: 'tobe',   color: '#00A862', dash: [], width: 3.5, dotR: 5.5, label: 'DIB To-Be', fill: 'rgba(0,168,98,0.07)' },
+  ];
+
+  datasets.forEach(ds => {
+    const points = TOBE_FACTORS.map((f, i) => ({
+      x: PAD_L + i * step,
+      y: PAD_T + plotH - (f[ds.key] / 5) * plotH
+    }));
+
+    if (ds.fill) {
+      ctx.beginPath();
+      ctx.moveTo(points[0].x, PAD_T + plotH);
+      points.forEach(p => ctx.lineTo(p.x, p.y));
+      ctx.lineTo(points[points.length - 1].x, PAD_T + plotH);
+      ctx.closePath();
+      ctx.fillStyle = ds.fill;
+      ctx.fill();
+    }
+
+    ctx.beginPath();
+    ctx.setLineDash(ds.dash);
+    ctx.strokeStyle = ds.color;
+    ctx.lineWidth = ds.width;
+    ctx.lineJoin = 'round';
+    points.forEach((p, i) => i === 0 ? ctx.moveTo(p.x, p.y) : ctx.lineTo(p.x, p.y));
+    ctx.stroke();
+    ctx.setLineDash([]);
+
+    points.forEach(p => {
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, ds.dotR, 0, Math.PI * 2);
+      ctx.fillStyle = ds.color;
+      ctx.fill();
+      ctx.strokeStyle = '#fff';
+      ctx.lineWidth = 1.5;
+      ctx.stroke();
+    });
+
+    // Label the line at the last point
+    const last = points[points.length - 1];
+    ctx.fillStyle = ds.color;
+    ctx.font = `bold 11px 'DM Sans', sans-serif`;
+    ctx.textAlign = 'left';
+    ctx.fillText(ds.label, last.x + 8, last.y + 4);
+  });
+}
+
 window.addEventListener('resize', () => {
   if (document.getElementById('section-asis').classList.contains('active')) drawCanvas();
+  if (document.getElementById('section-tobe').classList.contains('active')) drawTobeCanvas();
 });
 </script>
 </body>
